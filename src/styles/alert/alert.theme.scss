@@ -1,0 +1,33 @@
+@import "../init";
+
+.alert {
+  color: #fff;
+  &:not(.alert-light) a {
+    color: #fff;
+  }
+  &.alert-primary {
+    background-color: $primary;
+  }
+  &.alert-secondary {
+    background-color: $secondary;
+  }
+  &.alert-success {
+    background-color: $success;
+  }
+  &.alert-info {
+    background-color: $info;
+  }
+  &.alert-warning {
+    background-color: $warning;
+  }
+  &.alert-danger {
+    background-color: $danger;
+  }
+  &.alert-light {
+    background-color: $light;
+    color: #191d21;
+  }
+  &.alert-dark {
+    background-color: #191d21;
+  }
+}

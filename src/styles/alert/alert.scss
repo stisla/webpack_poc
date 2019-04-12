@@ -1,0 +1,32 @@
+@import "../init";
+
+.alert {
+  border: none;
+  border-radius: 2px;
+  padding: 15px 20px;
+  .alert-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  code {
+    border-radius: 3px;
+    padding: 1px 4px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  &.alert-has-icon {
+    display: flex;
+    .alert-icon {
+      margin-top: 4px;
+      width: 30px;
+      .ion, .fas, .far, .fab, .fal {
+        font-size: 20px;
+      }
+    }
+    .alert-body {
+      flex: 1;
+    }
+  }
+}
