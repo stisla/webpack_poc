@@ -17,7 +17,6 @@ const config: Configuration = {
     entry: {
         app: [
             "./dev/index.ts",
-
         ]
     },
     output: {

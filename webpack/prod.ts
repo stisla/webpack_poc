@@ -13,7 +13,8 @@ const config: Configuration = {
     },
     entry: {
         style: "./src/styles/main.scss",
-        theme: "./src/styles/theme.scss",
+        "light.theme": "./src/styles/theme.light.scss",
+        "dark.theme": "./src/styles/theme.dark.scss",
         responsive: "./src/styles/responsive.scss",
         all: "./src/styles/all.scss",
     },
