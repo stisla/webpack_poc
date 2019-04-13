@@ -8,7 +8,7 @@ npm install
 npm start
 ```
 
-Open your browser at localhost:8080 you'll see a button, go inside button.scss and make a change, it should hot reload,
+Open your browser at localhost:8080 you'll see some alerts, go inside alert.scss and make a change, it should hot reload,
 which means it won't actually refresh the browser.
 
 In case you change html under build, it'll refresh because HMR can't hot update html
