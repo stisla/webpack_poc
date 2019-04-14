@@ -1,0 +1,5 @@
+@mixin dependsOn($key) {
+  @if not map_has_key($included_modules, $key) {
+    @error "Dependency `#{$key}` not found"
+  }
+}

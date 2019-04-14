@@ -1,4 +1,7 @@
 @import "~normalize.css/normalize.css";
+@import "functions/module";
+@import "functions/depends";
 @import "typography";
 @import "button/button";
+@import "close";
 @import "alert/alert";
