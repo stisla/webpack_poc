@@ -1,9 +1,6 @@
 import * as webpack from "webpack";
 import {Configuration} from "webpack";
 import {resolve} from "path";
-import {copyFileSync, mkdirSync, existsSync} from "fs";
-!existsSync("./build") && mkdirSync("./build");
-copyFileSync("./dev/index.html", "./build/index.html");
 
 const config: Configuration = {
     mode: "development",
@@ -26,7 +23,7 @@ const config: Configuration = {
         pathinfo: true
     },
     devServer: {
-        contentBase: "./build",
+        contentBase: ["./dev", "./build"],
         watchContentBase: true,
         hot: true,
         historyApiFallback: {
