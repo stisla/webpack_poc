@@ -1,0 +1,47 @@
+.badge {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 7px 12px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+h1 .badge {
+  font-size: 24px;
+  padding: 16px 21px;
+}
+
+h2 .badge {
+  font-size: 22px;
+  padding: 14px 19px;
+}
+
+h3 .badge {
+  font-size: 18px;
+  padding: 11px 16px;
+}
+
+h4 .badge {
+  font-size: 16px;
+  padding: 8px 13px;
+}
+
+h5 .badge {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+h6 .badge {
+  font-size: 11px;
+  padding: 3px 8px;
+}
+
+.btn .badge {
+  margin-left: 5px;
+  padding: 4px 7px;
+}

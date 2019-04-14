@@ -1,4 +1,7 @@
 .btn {
-  background-color: $primary;
-  color: white;
+}
+.btn-primary {
+  box-shadow: 0 2px 6px darken(color(primary), 7.5%);
+  background-color: color(primary);
+  border-color: color(primary);
 }

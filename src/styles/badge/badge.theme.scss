@@ -1,0 +1,49 @@
+@import "../mixins/badge.variant";
+@import "../functions/colors";
+
+.badge {
+  &[href] {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s; // todo: anchor should be moved to reset or something
+  }
+
+  &.badge-primary {
+    @include badge(#fff, color(primary))
+  }
+
+  &.badge-secondary {
+    @include badge(color(fontdark), color(secondary));
+  }
+
+  &.badge-success {
+    @include badge(#fff, color(success));
+  }
+
+  &.badge-info {
+    @include badge(#fff, color(info));
+  }
+
+  &.badge-warning {
+    @include badge(#fff, color(warning));
+  }
+
+  &.badge-danger {
+    @include badge(#fff, color(danger));
+  }
+
+  &.badge-light {
+    @include badge(inherit, color(light));
+  }
+
+  &.badge-dark {
+    @include badge(#fff, color(dark));
+  }
+}
+
+.btn .badge {
+  &.badge-transparent {
+    background-color: rgba(255, 255, 255, .25);
+    color: #fff;
+  }
+}

@@ -4,28 +4,28 @@
     color: #fff;
   }
   &.alert-primary {
-    background-color: $primary;
+    background-color: color(primary);
   }
   &.alert-secondary {
-    background-color: $secondary;
+    background-color: color(secondary);
   }
   &.alert-success {
-    background-color: $success;
+    background-color: color(success);
   }
   &.alert-info {
-    background-color: $info;
+    background-color: color(info);
   }
   &.alert-warning {
-    background-color: $warning;
+    background-color: color(warning);
   }
   &.alert-danger {
-    background-color: $danger;
+    background-color: color(danger);
   }
   &.alert-light {
-    background-color: $light;
-    color: #191d21;
+    background-color: color(light);
+    color: color(fontdark);
   }
   &.alert-dark {
-    background-color: #191d21;
+    background-color: color(dark);
   }
 }

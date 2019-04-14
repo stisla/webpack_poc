@@ -1,7 +1,8 @@
 @import "~normalize.css/normalize.css";
-@import "functions/module";
-@import "functions/depends";
-@import "typography";
+@import "mixins/module";
+@import "mixins/depends";
+@import "typography/typography";
 @import "button/button";
 @import "close";
 @import "alert/alert";
+@import "badge/badge";
