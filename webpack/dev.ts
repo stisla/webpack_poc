@@ -13,7 +13,7 @@ const config: Configuration = {
     },
     entry: {
         app: [
-            "./dev/index.ts",
+            "./workspace/index.ts",
         ]
     },
     output: {
@@ -23,7 +23,7 @@ const config: Configuration = {
         pathinfo: true
     },
     devServer: {
-        contentBase: ["./dev", "./build"],
+        contentBase: ["./workspace", "./build"],
         watchContentBase: true,
         hot: true,
         historyApiFallback: {
