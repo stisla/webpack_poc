@@ -1,6 +1,5 @@
 @mixin module($key) {
   @if not (variable_exists("included_modules")) {
-    @warn "declaring $included_modules";
     $included_modules: () !global;
   }
   $included_modules: map-merge(($key: "included"), $included_modules) !global;

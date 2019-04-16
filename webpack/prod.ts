@@ -28,6 +28,22 @@ const config: Configuration = {
     module: {
         rules: [
             {
+                test: /\.eot(\?.*)?$/,
+                loader: 'url-loader?limit=1000000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
+            },
+            {
+                test: /\.(woff|woff2)(\?.*)?$/,
+                loader: 'url-loader?limit=1000000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
+            },
+            {
+                test: /\.ttf(\?.*)?$/,
+                loader: 'url-loader?limit=1000000&mimetype=application/octet-stream&name=fonts/[hash].[ext]'
+            },
+            {
+                test: /\.svg(\?.*)?$/,
+                loader: 'url-loader?limit=1000000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
+            },
+            {
                 test: /\.scss/,
                 loaders: [
                     MiniCssExtractPlugin.loader,

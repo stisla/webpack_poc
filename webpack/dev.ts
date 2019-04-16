@@ -36,6 +36,22 @@ const config: Configuration = {
     module: {
         rules: [
             {
+                test: /\.eot(\?.*)?$/,
+                loader: 'file-loader?name=fonts/[hash].[ext]'
+            },
+            {
+                test: /\.(woff|woff2)(\?.*)?$/,
+                loader: 'file-loader?name=fonts/[hash].[ext]'
+            },
+            {
+                test: /\.ttf(\?.*)?$/,
+                loader: 'url-loader?limit=10000&mimetype=application/octet-stream&name=fonts/[hash].[ext]'
+            },
+            {
+                test: /\.svg(\?.*)?$/,
+                loader: 'url-loader?limit=10000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
+            },
+            {
                 test: /\.ts$/,
                 loader: "awesome-typescript-loader",
                 exclude: /node_modules/
